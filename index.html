@@ -1,7 +1,17 @@
-<!DOCTYPE html>
-<html lang="en-us">
-  <body>
-      <p>Please unscramble this word: abhiops</p>
 
+<html>  
+  <head>   
+  </head>  
+  <body>  
+    <h1 id="welcome"> Hello! </h1>  
   </body>
+  
+  <script type = "text/javascript">
+    var targetword = "phobias";
+    var userguess = prompt("Please unscramble these letters: abhiops");
+    if (userguess != null) {
+      document.getElementById("welcome").innerText =
+      "Your guess, " + userguess + ", was (in)correct!  The word was, " + targetword + "!";
+    }
+  </script> 
 </html>
