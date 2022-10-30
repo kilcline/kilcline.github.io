@@ -3,15 +3,14 @@
   <head>   
   </head>  
   <body>  
-    <h1 id="welcome"> Hello! </h1>  
+    <h1 id="welcome"> Welcome to Anagram Challenge! </h1>  
   </body>
   
   <script type = "text/javascript">
     var targetword = "phobias";
     var userguess = prompt("Please unscramble these letters: abhiops");
-    if (userguess != null) {
-      document.getElementById("welcome").innerText =
-      "Your guess, " + userguess + ", was (in)correct!  The word was, " + targetword + "!";
+    if (userguess == targetword) {
+      document.getElementById("welcome").innerText = "Your guess, " + userguess + ", was correct!  The word was, " + targetword + "!";
     }
   </script> 
 </html>
